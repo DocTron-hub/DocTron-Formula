@@ -1,0 +1,18 @@
+[
+    {
+        "qid": "part-00014-8bdd594e-bf2f-4dee-8277-9c33e8468d28-c000_9402_single_15",
+        "messages": [
+            {
+                "content": "<image> Analyze the image. Extract and output only the LaTeX formulas present in the image, in LaTeX code format. Ignore inline formulas, all other text, and do not include any explanations.",
+                "role": "user"
+            },
+            {
+                "content": "\\begin{align}\n\\frac{d}{dt}X_1+\\frac{d}{dt}X_2 &=\\left(AX_1+B\\begin{bmatrix}c_1\\cos{\\omega_1t}\\\\ d_1\\cos{\\omega_1t}\\end{bmatrix}\\right)+ \\left(AX_2+B\\begin{bmatrix}c_2\\cos{\\omega_2t}\\\\ d_2\\cos{\\omega_2t}\\end{bmatrix}\\right) \\\\ &=AX_1+AX_2+B\\begin{bmatrix}c_1\\cos{\\omega_1t}\\\\ d_1\\cos{\\omega_1t}\\end{bmatrix}+B\\begin{bmatrix}c_2\\cos{\\omega_2t}\\\\ d_2\\cos{\\omega_2t}\\end{bmatrix} \\\\ &= A(X_1+X_2) + B\\left(\\begin{bmatrix}c_1\\cos{\\omega_1t}\\\\ d_1\\cos{\\omega_1t}\\end{bmatrix}+\\begin{bmatrix}c_2\\cos{\\omega_2t}\\\\ d_2\\cos{\\omega_2t}\\end{bmatrix}\\right) \\\\ &= AX+B\\begin{bmatrix}u_1(t) \\\\ u_2(t)\\end{bmatrix} \\\\ &=\\frac{d}{dt}X.\n\\end{align}",
+                "role": "assistant"
+            }
+        ],
+        "images": [
+            "./asset/images/question_part-00014-8bdd594e-bf2f-4dee-8277-9c33e8468d28-c000_9402_single_15.png"
+        ]
+    }
+]
